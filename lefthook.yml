@@ -13,5 +13,3 @@ pre-commit:
   commands:
     eslint:
       run: pnpm run lint
-    prettier:
-      run: pnpm run prettier
