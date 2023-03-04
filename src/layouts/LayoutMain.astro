@@ -1,3 +1,7 @@
+---
+import Link from "components/Link.astro";
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -7,13 +11,60 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;600;900&display=swap"
 			rel="stylesheet"
 		/>
 		<title>The Dot.to</title>
 	</head>
 
 	<body>
-		<slot />
+		<div class="layout-container">
+			<header class="layout-header">
+				<h3>the dot.to</h3>
+
+				<nav>
+					<Link route="INDEX">Index</Link>
+				</nav>
+			</header>
+
+			<div class="layout-content">
+				<slot />
+			</div>
+
+			<footer class="layout-footer">
+				<h4>the dot.to</h4>
+			</footer>
+		</div>
 	</body>
 </html>
+
+<style>
+  html {
+    @apply text-base bg-white-01 text-black font-default font-300;
+  }
+
+  .layout-container {
+    @apply h-screen w-screen py-8 px-16 grid grid-cols-1 gap-4;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .layout-container > .layout-header {
+    @apply flex justify-between pb-4 border-b border-b-green-01 sticky;
+  }
+
+  .layout-header > h3 {
+    @apply text-2xl text-green-01 font-900;
+  }
+
+  .layout-header > nav {
+    @apply flex items-center gap-8;
+  }
+
+  .layout-container > .layout-footer {
+    @apply border-t border-t-green-01 pt-4 flex items-start;
+  }
+
+  .layout-footer > h4 {
+    @apply text-8xl text-green-01 font-900;
+  }
+</style>
