@@ -1,0 +1,17 @@
+commit-msg:
+  commands:
+    linter:
+      run: npx commitlint --edit
+
+post-merge:
+  commands:
+    update:
+      run: pnpm install
+
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      run: pnpm run lint
+    prettier:
+      run: pnpm run prettier
