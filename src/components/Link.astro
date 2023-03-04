@@ -1,0 +1,21 @@
+---
+import { Routes } from "enums/routes";
+
+export interface Props {
+  route: keyof typeof Routes;
+}
+
+const { route } = Astro.props;
+
+const href = Routes[route];
+---
+
+<a href={href}>
+	<slot />
+</a>
+
+<style>
+  a {
+    @apply text-lg font-600 lowercase;
+  }
+</style>

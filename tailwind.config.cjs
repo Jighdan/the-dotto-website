@@ -5,8 +5,13 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
-      sans: ["Source Sans Pro", ...defaultTheme.fontFamily.sans],
-      serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
+      default: ["Archivo", ...defaultTheme.fontFamily.sans],
+    },
+
+    fontWeight: {
+      300: 300,
+      600: 600,
+      900: 900,
     },
 
     colors: {
