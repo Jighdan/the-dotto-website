@@ -1,5 +1,6 @@
 ---
 import Link from "components/Link.astro";
+import LinkExternal from "components/LinkExternal.astro";
 ---
 
 <html lang="en">
@@ -33,12 +34,14 @@ import Link from "components/Link.astro";
 
 			<footer class="layout-footer">
 				<h4>the dot.to</h4>
+
+				<LinkExternal href='mailto:thedotto.creative@gmail.com' className='link'>Reach out</LinkExternal>
 			</footer>
 		</div>
 	</body>
 </html>
 
-<style>
+<style is:global>
   html {
     @apply text-base bg-white-01 text-black font-default font-300;
   }
@@ -50,7 +53,7 @@ import Link from "components/Link.astro";
   }
 
   .layout-container > .layout-header {
-    @apply flex justify-between border-b border-b-green-01 sticky;
+    @apply flex justify-between border-b-2 border-b-green-01 sticky;
 		@apply pb-2 lg:pb-4;
   }
 
@@ -65,7 +68,7 @@ import Link from "components/Link.astro";
   }
 
   .layout-container > .layout-footer {
-    @apply border-t border-t-green-01 flex items-start;
+    @apply border-t-2 border-t-green-01 flex justify-between items-start;
 		@apply pt-2 lg:pt-4;
   }
 
@@ -73,4 +76,9 @@ import Link from "components/Link.astro";
     @apply text-green-01 font-900;
 		@apply text-4xl md:text-6xl lg:text-8xl;
   }
+
+	.layout-footer > .link {
+		@apply text-green-01;
+		@apply text-2xl md:text-4xl lg:text-6xl;
+	}
 </style>
