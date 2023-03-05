@@ -1,5 +1,6 @@
 ---
 import RingText from "components/RingText.astro";
+import IconLogo from "icons/IconLogo.astro";
 ---
 
 <html lang="en">
@@ -20,6 +21,7 @@ import RingText from "components/RingText.astro";
 	<body>
 		<div class="layout-container">
 			<header class="layout-header">
+				<IconLogo />
 				<h3>the dot.to</h3>
 			</header>
 
@@ -61,7 +63,7 @@ import RingText from "components/RingText.astro";
   }
 
   .layout-container > .layout-header {
-    @apply flex justify-between border-b-2 border-b-green-01 sticky;
+    @apply flex items-center gap-4 border-b-2 border-b-green-01 sticky;
 		@apply pb-2 lg:pb-4;
   }
 
