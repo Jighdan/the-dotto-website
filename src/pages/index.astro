@@ -2,6 +2,8 @@
 import json from "content.json";
 import LinkExternal from "components/LinkExternal.astro";
 import LayoutMain from "../layouts/LayoutMain.astro";
+
+const callToActionHref = `mailto:${json.meta.email}`;
 ---
 
 <LayoutMain>
@@ -15,7 +17,7 @@ import LayoutMain from "../layouts/LayoutMain.astro";
     <p>{json.section_contact.description}</p>
 
     <div>
-      <LinkExternal href="mailto:thedotto.creative@gmail.com" className="link">
+      <LinkExternal href={callToActionHref}>
         <>{json.section_contact.call_to_action}</>
       </LinkExternal>
     </div>

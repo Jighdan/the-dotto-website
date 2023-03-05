@@ -1,22 +1,23 @@
 {
-	"meta": {
-		"title": "the dot.to"
-	},
+  "meta": {
+    "title": "the dot.to",
+    "email": "thedotto.creative@gmail.com"
+  },
 
-	"section_hero": {
-		"title": "—a meaningful effort in crafting creative solutions leveraging technology.",
-		"description": "We are a group of software craftsman that firmly believe that everything can be done better—thus always seeking to improve ourselves and the composition of elements we deliver."
-	},
+  "section_hero": {
+    "title": "—a meaningful effort in crafting creative solutions leveraging technology.",
+    "description": "We are a group of software craftsman that firmly believe that everything can be done better—thus always seeking to improve ourselves and the composition of elements we deliver."
+  },
 
-	"section_contact": {
-		"title": "Do you have an interesting project?",
-		"description": "We are always looking for new opportunities to work with new clients. If you have a project that you would like to discuss, please get in touch.",
-		"call_to_action": "Reach out"
-	},
+  "section_contact": {
+    "title": "Do you have an interesting project?",
+    "description": "We are always looking for new opportunities to work with new clients. If you have a project that you would like to discuss, please get in touch.",
+    "call_to_action": "Reach out"
+  },
 
-	"layout_footer": {
-		"title": "Developed with intent by Reinny Almonte",
-		"copyright": "© — Dominican Republic",
-		"ring_text": "constant improvement —— the meaningful effort ——"
-	}
+  "layout_footer": {
+    "title": "Developed with intent by Reinny Almonte",
+    "copyright": "© — Dominican Republic",
+    "ring_text": "constant improvement —— the meaningful effort ——"
+  }
 }
