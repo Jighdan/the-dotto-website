@@ -1,0 +1,27 @@
+---
+import IconArrowUpRight from "icons/IconArrowUpRight.astro";
+
+export interface Props {
+  href: string;
+  className?: string;
+}
+
+const { href, className } = Astro.props;
+---
+
+<a href={href} target="_blank" class={className}>
+	<slot />
+	<IconArrowUpRight className="icon" />
+</a>
+
+<style>
+  a {
+    @apply text-lg font-600 lowercase flex items-end;
+    @apply gap-1 md:gap-2 lg:gap-3;
+  }
+
+  a > .icon {
+    @apply pb-2;
+    @apply w-0.75-em h-0.75-em md:w-0.65-em md:h-0.65-em lg:w-0.5-em lg:h-0.5-em;
+  }
+</style>

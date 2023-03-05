@@ -1,0 +1,26 @@
+---
+export interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<svg
+	width="22"
+	height="21"
+	viewBox="0 0 22 21"
+	fill="none"
+	class={className}
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<line
+		x1="2.87868"
+		y1="18.8493"
+		x2="17.0208"
+		y2="4.70713"
+		stroke="currentColor"
+		stroke-width="6"></line>
+	<line x1="1" y1="3" x2="22" y2="3" stroke="currentColor" stroke-width="6"></line>
+	<line x1="19" y1="21" x2="19" stroke="currentColor" stroke-width="6"></line>
+</svg>
