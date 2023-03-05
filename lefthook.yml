@@ -8,8 +8,3 @@ post-merge:
     update:
       run: pnpm install
 
-pre-commit:
-  parallel: true
-  commands:
-    eslint:
-      run: pnpm run lint
