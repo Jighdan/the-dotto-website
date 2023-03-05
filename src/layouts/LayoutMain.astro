@@ -1,6 +1,5 @@
 ---
-import Link from "components/Link.astro";
-import LinkExternal from "components/LinkExternal.astro";
+import RingText from "components/RingText.astro";
 ---
 
 <html lang="en">
@@ -22,10 +21,6 @@ import LinkExternal from "components/LinkExternal.astro";
 		<div class="layout-container">
 			<header class="layout-header">
 				<h3>the dot.to</h3>
-
-				<nav>
-					<Link route="INDEX">Index</Link>
-				</nav>
 			</header>
 
 			<div class="layout-content">
@@ -33,9 +28,13 @@ import LinkExternal from "components/LinkExternal.astro";
 			</div>
 
 			<footer class="layout-footer">
-				<h4>the dot.to</h4>
+				<div>
+					<h5>Developed with intent by Reinny Almonte</h5>
 
-				<LinkExternal href='mailto:thedotto.creative@gmail.com' className='link'>Reach out</LinkExternal>
+					<p>© — Dominican Republic</p>
+				</div>
+
+				<RingText identifier="keep-scrolling">constant improvement —— the meaningful effort ——</RingText>
 			</footer>
 		</div>
 	</body>
@@ -43,12 +42,21 @@ import LinkExternal from "components/LinkExternal.astro";
 
 <style is:global>
   html {
-    @apply text-base bg-white-01 text-black font-default font-300;
+    @apply text-base bg-white-01 text-green-01 font-default font-300;
   }
 
+	html, body {
+		@apply overflow-hidden;
+	}
+
+	body {
+		@apply h-screen max-h-screen w-screen;
+		@apply py-4 lg:py-8 px-8 lg:px-16;
+	}
+
   .layout-container {
-    @apply h-screen w-screen grid grid-cols-1;
-		@apply py-4 lg:py-8 px-8 lg:px-16 gap-2 lg:gap-4;
+    @apply relative h-full grid grid-cols-1 overflow-hidden;
+		@apply gap-2 lg:gap-4;
     grid-template-rows: auto 1fr auto;
   }
 
@@ -58,7 +66,7 @@ import LinkExternal from "components/LinkExternal.astro";
   }
 
   .layout-header > h3 {
-    @apply text-green-01 font-900;
+    @apply font-900;
 		@apply text-lg md:text-xl lg:text-2xl;
   }
 
@@ -67,19 +75,27 @@ import LinkExternal from "components/LinkExternal.astro";
 		@apply gap-4 lg:gap-8;
   }
 
+	.layout-container > .layout-content {
+		@apply flex flex-col overflow-y-auto;
+		@apply gap-8 md:gap-14 lg:gap-16;
+	}
+
   .layout-container > .layout-footer {
-    @apply border-t-2 border-t-green-01 flex justify-between;
+    @apply border-t-2 border-t-green-01 flex;
 		@apply pt-2 lg:pt-4;
-		@apply items-end md:items-start;
   }
 
-  .layout-footer > h4 {
-    @apply text-green-01 font-900;
-		@apply text-4xl md:text-6xl lg:text-8xl;
-  }
+	.layout-footer > div {
+		@apply flex flex-col justify-end gap-2 md:gap-4 lg:gap-6;
+		@apply basis-1/2 md:basis-3/4;
+	}
 
-	.layout-footer > .link {
-		@apply text-green-01;
-		@apply text-2xl md:text-4xl lg:text-6xl;
+	.layout-footer > div > h5 {
+		@apply font-600;
+		@apply text-base md:text-lg lg:text-xl;
+	}
+
+	.layout-footer > div > p {
+		@apply text-sm md:text-base lg:text-lg;
 	}
 </style>
