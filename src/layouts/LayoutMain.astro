@@ -44,27 +44,33 @@ import Link from "components/Link.astro";
   }
 
   .layout-container {
-    @apply h-screen w-screen py-8 px-16 grid grid-cols-1 gap-4;
+    @apply h-screen w-screen grid grid-cols-1;
+		@apply py-4 lg:py-8 px-8 lg:px-16 gap-2 lg:gap-4;
     grid-template-rows: auto 1fr auto;
   }
 
   .layout-container > .layout-header {
-    @apply flex justify-between pb-4 border-b border-b-green-01 sticky;
+    @apply flex justify-between border-b border-b-green-01 sticky;
+		@apply pb-2 lg:pb-4;
   }
 
   .layout-header > h3 {
-    @apply text-2xl text-green-01 font-900;
+    @apply text-green-01 font-900;
+		@apply text-lg md:text-xl lg:text-2xl;
   }
 
   .layout-header > nav {
-    @apply flex items-center gap-8;
+    @apply flex items-center;
+		@apply gap-4 lg:gap-8;
   }
 
   .layout-container > .layout-footer {
-    @apply border-t border-t-green-01 pt-4 flex items-start;
+    @apply border-t border-t-green-01 flex items-start;
+		@apply pt-2 lg:pt-4;
   }
 
   .layout-footer > h4 {
-    @apply text-8xl text-green-01 font-900;
+    @apply text-green-01 font-900;
+		@apply text-4xl md:text-6xl lg:text-8xl;
   }
 </style>
