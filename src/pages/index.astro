@@ -1,37 +1,60 @@
 ---
+import LinkExternal from "components/LinkExternal.astro";
 import LayoutMain from "../layouts/LayoutMain.astro";
-import RingText from "components/RingText.astro";
 ---
 
 <LayoutMain>
-	<section class='section-hero'>
-		<h1>—a meaningful effort in crafting creative solutions leveraging technology.</h1>
+  <section class="section-hero">
+    <h1>
+      —a meaningful effort in crafting creative solutions leveraging technology.
+    </h1>
 
-		<p>We are a group of software craftsman that firmly believe that everything can be done better—thus always seeking to improve ourselves and the elements we deliver.</p>
-	</section>
+    <p>
+      We are a group of software craftsman that firmly believe that everything
+      can be done better—thus always seeking to improve ourselves and the
+      composition of elements we deliver.
+    </p>
+  </section>
 
-	<div class="section-keep-scrolling">
-		<RingText identifier="keep-scrolling">keep scrolling——keep scrolling——keep scrolling——</RingText>
-	</div>
+  <section class="section-contact">
+    <h2>Do you have an interesting project?</h2>
+
+    <p>
+      We are always looking for new opportunities to work with new clients. If
+      you have a project that you would like to discuss, please get in touch.
+    </p>
+
+    <div>
+      <LinkExternal href="mailto:thedotto.creative@gmail.com" className="link">
+        Reach out
+      </LinkExternal>
+    </div>
+  </section>
 </LayoutMain>
 
 <style>
-	.section-hero {
-		@apply flex flex-col;
-		@apply gap-2 md:gap-4 lg:gap-8;
-	}
+  section {
+    @apply flex flex-col;
+    @apply gap-2 md:gap-4 lg:gap-6;
+  }
 
-	.section-hero > h1 {
-		@apply font-600 text-green-01 ;
-		@apply text-3xl md:text-5xl lg:text-7xl;
-	}
+  .section-hero > h1 {
+    @apply font-900;
+    @apply text-3xl md:text-5xl lg:text-7xl;
+  }
 
-	.section-hero > p {
-		@apply max-w-4xl;
-		@apply text-base md:text-lg lg:text-xl;
-	}
+  .section-hero > p {
+    @apply max-w-4xl;
+    @apply text-base md:text-lg lg:text-xl;
+  }
 
-	.section-keep-scrolling {
-		@apply flex justify-center;
-	}
+  .section-contact > h2 {
+    @apply font-900;
+    @apply text-2xl md:text-4xl lg:text-5xl;
+  }
+
+  .section-contact > p {
+    @apply max-w-4xl;
+    @apply text-base md:text-lg lg:text-xl;
+  }
 </style>

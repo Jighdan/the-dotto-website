@@ -16,13 +16,27 @@ const { href, className } = Astro.props;
 
 <style>
   a {
-    @apply text-lg font-600 lowercase flex items-end;
-    @apply border-b-2 border-b-current;
+    @apply inline-flex items-end;
+    @apply text-green-02 font-600 lowercase;
+    @apply text-xl md:text-2xl lg:text-4xl;
     @apply gap-1 md:gap-2;
   }
 
   a > .icon {
-    @apply pb-2;
+    @apply pb-2 transition-transform duration-100 ease-in-out;
     @apply w-0.75-em h-0.75-em md:w-0.65-em md:h-0.65-em lg:w-0.5-em lg:h-0.5-em;
+  }
+
+  a:focus {
+    @apply outline-none;
+  }
+
+  a:hover > .icon,
+  a:focus > .icon {
+    @apply scale-150;
+  }
+
+  a:active > .icon {
+    @apply scale-110;
   }
 </style>

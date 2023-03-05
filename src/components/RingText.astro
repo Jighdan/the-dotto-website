@@ -8,36 +8,41 @@ const identifierParsed = identifier.replace(" ", "-");
 const identifierFormatted = `#${identifierParsed}`;
 ---
 
-<svg
-  version="1.1"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  x="0px"
-  y="0px"
-  viewBox="0 0 300 300"
->
-  <defs>
-    <path
-      id={identifierParsed}
-      d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
-  </defs>
+<figure>
+  <svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 160 160"
+  >
+    <defs>
+      <path
+        id={identifierParsed}
+        d=" M 80, 80 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+    </defs>
 
-  <g class="group">
-    <text>
-      <textPath xlink:href={identifierFormatted}>
-        <slot />
-      </textPath>
-    </text>
-  </g>
-</svg>
+    <g class="group">
+      <text>
+        <textPath xlink:href={identifierFormatted}>
+          <slot />
+        </textPath>
+      </text>
+    </g>
+  </svg>
+</figure>
 
 <style>
+  figure {
+    @apply absolute right-0 overflow-hidden;
+    @apply -bottom-[18];
+  }
+
   svg {
-		@apply inline-block animate-rotate;
-		@apply w-48 h-48;
+    @apply inline-block animate-rotate;
+    @apply h-36 w-36 lg:w-40 lg:h-40;
   }
 
   svg > g > text {
-    @apply text-green-01;
+    @apply stroke-green-02;
   }
 </style>
