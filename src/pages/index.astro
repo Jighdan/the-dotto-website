@@ -1,32 +1,22 @@
 ---
+import json from "content.json";
 import LinkExternal from "components/LinkExternal.astro";
 import LayoutMain from "../layouts/LayoutMain.astro";
 ---
 
 <LayoutMain>
   <section class="section-hero">
-    <h1>
-      —a meaningful effort in crafting creative solutions leveraging technology.
-    </h1>
-
-    <p>
-      We are a group of software craftsman that firmly believe that everything
-      can be done better—thus always seeking to improve ourselves and the
-      composition of elements we deliver.
-    </p>
+    <h1>{json.section_hero.title}</h1>
+    <p>{json.section_hero.description}</p>
   </section>
 
   <section class="section-contact">
-    <h2>Do you have an interesting project?</h2>
-
-    <p>
-      We are always looking for new opportunities to work with new clients. If
-      you have a project that you would like to discuss, please get in touch.
-    </p>
+    <h2>{json.section_contact.title}</h2>
+    <p>{json.section_contact.description}</p>
 
     <div>
       <LinkExternal href="mailto:thedotto.creative@gmail.com" className="link">
-        Reach out
+        <>{json.section_contact.call_to_action}</>
       </LinkExternal>
     </div>
   </section>
