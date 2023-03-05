@@ -15,6 +15,7 @@ module.exports = {
     },
 
     colors: {
+      current: "currentColor",
       black: "#0c0e10",
       white: {
         "01": "#fffeff",
@@ -24,6 +25,17 @@ module.exports = {
         "01": "#173300",
         "02": "#9ee96f",
       },
+    },
+
+    animation: {
+      'rotate': 'rotate 10s linear infinite'
+    },
+
+    keyframes: {
+      rotate: {
+        "0%": { transform: "rotate(0deg)" },
+        "100%": { transform: "rotate(360deg)" },
+      }
     },
 
     extend: {

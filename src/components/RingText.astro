@@ -1,0 +1,43 @@
+---
+export interface Props {
+  identifier: string;
+}
+
+const { identifier } = Astro.props;
+const identifierParsed = identifier.replace(" ", "-");
+const identifierFormatted = `#${identifierParsed}`;
+---
+
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewBox="0 0 300 300"
+>
+  <defs>
+    <path
+      id={identifierParsed}
+      d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+  </defs>
+
+  <g class="group">
+    <text>
+      <textPath xlink:href={identifierFormatted}>
+        <slot />
+      </textPath>
+    </text>
+  </g>
+</svg>
+
+<style>
+  svg {
+		@apply inline-block animate-rotate;
+		@apply w-48 h-48;
+  }
+
+  svg > g > text {
+    @apply text-green-01;
+  }
+</style>
