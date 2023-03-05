@@ -10,14 +10,15 @@ const { href, className } = Astro.props;
 ---
 
 <a href={href} target="_blank" class={className}>
-	<slot />
-	<IconArrowUpRight className="icon" />
+  <span><slot /></span>
+  <IconArrowUpRight className="icon" />
 </a>
 
 <style>
   a {
     @apply text-lg font-600 lowercase flex items-end;
-    @apply gap-1 md:gap-2 lg:gap-3;
+    @apply border-b-2 border-b-current;
+    @apply gap-1 md:gap-2;
   }
 
   a > .icon {
