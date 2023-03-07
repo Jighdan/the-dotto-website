@@ -1,7 +1,11 @@
 ---
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import json from "content.json";
 import RingText from "components/RingText.astro";
 import IconLogo from "icons/IconLogo.astro";
+
+const fontsUrl =
+  "https://fonts.googleapis.com/css2?family=Archivo:wght@300;600;900&display=swap";
 ---
 
 <html lang="en">
@@ -10,12 +14,7 @@ import IconLogo from "icons/IconLogo.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;600;900&display=swap"
-      rel="stylesheet"
-    />
+    <GoogleFontsOptimizer url={fontsUrl} />
     <title>{json.meta.title}</title>
   </head>
 
@@ -41,9 +40,8 @@ import IconLogo from "icons/IconLogo.astro";
         </RingText>
       </footer>
     </div>
+    <script src="../animations.ts"></script>
   </body>
-
-  <script src="../animations.ts"></script>
 </html>
 
 <style is:global>
