@@ -19,5 +19,11 @@
     "title": "Developed with intent by Reinny Almonte",
     "copyright": "© — Dominican Republic",
     "ring_text": "constant improvement —— the meaningful effort ——"
+  },
+
+  "seo": {
+    "title": "the dot.to - studio of craftsmanship",
+    "description": "Software development agency.",
+    "image": "https://raw.githubusercontent.com/Jighdan/the-dotto-website/main/assets/logo.png"
   }
 }
