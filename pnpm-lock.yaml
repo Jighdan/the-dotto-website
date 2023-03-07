@@ -7,6 +7,7 @@ specifiers:
   astro-google-fonts-optimizer: ^0.2.2
   commitlint: ^17.4.4
   gsap: ^3.11.4
+  interactjs: ^1.10.17
   lefthook: ^1.3.3
   tailwindcss: ^3.0.24
 
@@ -20,6 +21,7 @@ devDependencies:
   astro-google-fonts-optimizer: 0.2.2
   commitlint: 17.4.4
   gsap: 3.11.4
+  interactjs: 1.10.17
   lefthook: 1.3.3
 
 packages:
@@ -741,6 +743,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@interactjs/types/1.10.17:
+    resolution: {integrity: sha512-X2JpoM7xUw0p9Me0tMaI0HNfcF/Hd07ZZlzpnpEMpGerUZOLoyeThrV9P+CrBHxZrluWJrigJbcdqXliFd0YMA==}
+    dev: true
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
@@ -2015,6 +2021,12 @@ packages:
 
   /ini/1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
+    dev: true
+
+  /interactjs/1.10.17:
+    resolution: {integrity: sha512-grjHJgnWkCoQLmAlk2yalNd1r0ztUhXLJNVjSOfWn1wfNNgU2tx1cDEkro9WYerDNC9UG3MZTeD4O6zOM5gbIA==}
+    dependencies:
+      '@interactjs/types': 1.10.17
     dev: true
 
   /is-arrayish/0.2.1:
