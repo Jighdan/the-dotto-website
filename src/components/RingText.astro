@@ -8,7 +8,7 @@ const identifierParsed = identifier.replace(" ", "-");
 const identifierFormatted = `#${identifierParsed}`;
 ---
 
-<figure>
+<figure class="ring-text">
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ const identifierFormatted = `#${identifierParsed}`;
 
 <style>
   figure {
-    @apply absolute right-0 overflow-hidden;
+    @apply absolute right-0 overflow-hidden bg-transparent;
     @apply -bottom-[18];
   }
 
