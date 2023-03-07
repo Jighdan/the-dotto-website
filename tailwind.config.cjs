@@ -16,7 +16,7 @@ module.exports = {
 
     colors: {
       current: "currentColor",
-      transparent: 'transparent',
+      transparent: "transparent",
       black: "#0c0e10",
       white: {
         "01": "#fffeff",
@@ -29,23 +29,27 @@ module.exports = {
     },
 
     animation: {
-      'rotate': 'rotate 10s linear infinite'
+      rotate: "rotate 10s linear infinite",
     },
 
     keyframes: {
       rotate: {
         "0%": { transform: "rotate(0deg)" },
         "100%": { transform: "rotate(-360deg)" },
-      }
+      },
     },
 
     extend: {
       spacing: {
-        '0.5-em': '0.5em',
-        '0.65-em': '0.65em',
-        '0.75-em': '0.75em',
-        18: '4.6rem',
+        "0.5-em": "0.5em",
+        "0.65-em": "0.65em",
+        "0.75-em": "0.75em",
+        18: "4.6rem",
       },
-    }
-  }
+
+      transitionProperty: {
+        "height-width": "height, width",
+      },
+    },
+  },
 };
