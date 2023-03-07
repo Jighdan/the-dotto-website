@@ -5,6 +5,7 @@ specifiers:
   '@commitlint/config-conventional': ^17.4.4
   astro: ^2.0.17
   astro-google-fonts-optimizer: ^0.2.2
+  astro-seo: ^0.7.1
   commitlint: ^17.4.4
   gsap: ^3.11.4
   interactjs: ^1.10.17
@@ -19,6 +20,7 @@ dependencies:
 devDependencies:
   '@commitlint/config-conventional': 17.4.4
   astro-google-fonts-optimizer: 0.2.2
+  astro-seo: 0.7.1
   commitlint: 17.4.4
   gsap: 3.11.4
   interactjs: 1.10.17
@@ -1069,6 +1071,10 @@ packages:
 
   /astro-google-fonts-optimizer/0.2.2:
     resolution: {integrity: sha512-YQxp/ExF3NzUomAGuu1VKecO7/ETRnhnE50gqwAqfpbGPZFj4MYa4XxK1ukBg3R63QmKuE5uurOiKmXiLzttuw==}
+    dev: true
+
+  /astro-seo/0.7.1:
+    resolution: {integrity: sha512-8Yo1nQrl2iB5zj+VUAHrvGIck8bZ4WAmXQgJOeF9FuAZGQD5qK6DtSZaRbpBXsFfZYHA6tE8pjs3btHhLbC1zQ==}
     dev: true
 
   /astro/2.0.17_@types+node@18.14.6:
