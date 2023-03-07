@@ -4,6 +4,7 @@ specifiers:
   '@astrojs/tailwind': ^3.0.1
   '@commitlint/config-conventional': ^17.4.4
   astro: ^2.0.17
+  astro-google-fonts-optimizer: ^0.2.2
   commitlint: ^17.4.4
   gsap: ^3.11.4
   lefthook: ^1.3.3
@@ -16,6 +17,7 @@ dependencies:
 
 devDependencies:
   '@commitlint/config-conventional': 17.4.4
+  astro-google-fonts-optimizer: 0.2.2
   commitlint: 17.4.4
   gsap: 3.11.4
   lefthook: 1.3.3
@@ -1057,6 +1059,10 @@ packages:
   /arrify/1.0.1:
     resolution: {integrity: sha512-3CYzex9M9FGQjCGMGyi6/31c8GJbgb0qGyrx5HWxPd0aCwh4cB2YjMb2Xf9UuoogrMrlO9cTqnB5rI5GHZTcUA==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /astro-google-fonts-optimizer/0.2.2:
+    resolution: {integrity: sha512-YQxp/ExF3NzUomAGuu1VKecO7/ETRnhnE50gqwAqfpbGPZFj4MYa4XxK1ukBg3R63QmKuE5uurOiKmXiLzttuw==}
     dev: true
 
   /astro/2.0.17_@types+node@18.14.6:
