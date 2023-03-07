@@ -45,4 +45,16 @@ const identifierFormatted = `#${identifierParsed}`;
   svg > g > text {
     @apply stroke-green-02;
   }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    figure svg {
+      @apply transition-height-width duration-200 ease-in;
+    }
+
+    figure:hover svg,
+    figure[data-position-y] svg,
+    figure[data-position-x] svg {
+      @apply h-40 w-40 lg:w-48 lg:h-48;
+    }
+  }
 </style>
