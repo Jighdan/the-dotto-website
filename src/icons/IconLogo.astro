@@ -29,3 +29,19 @@
     stroke-width="6"></line>
   <circle cx="37.3137" cy="12.5" r="10.5" fill="currentColor"></circle>
 </svg>
+
+<style>
+  @media screen and (prefers-reduced-motion: no-preference) {
+    #logo line, #logo circle {
+      @apply transition-transform ease-in duration-100;
+    }
+
+    #logo:hover line {
+      @apply -translate-x-2 scale-90;
+    }
+
+    #logo:hover circle {
+      @apply scale-90;
+    }
+  }
+</style>
