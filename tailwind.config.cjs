@@ -16,6 +16,7 @@ module.exports = {
 
     colors: {
       current: "currentColor",
+      transparent: 'transparent',
       black: "#0c0e10",
       white: {
         "01": "#fffeff",
@@ -39,17 +40,12 @@ module.exports = {
     },
 
     extend: {
-      width: {
+      spacing: {
         '0.5-em': '0.5em',
         '0.65-em': '0.65em',
         '0.75-em': '0.75em',
+        18: '4.6rem',
       },
-      height: {
-        '0.5-em': '0.5em',
-        '0.65-em': '0.65em',
-        '0.75-em': '0.75em',
-      }
     }
-  },
-  plugins: [],
+  }
 };
