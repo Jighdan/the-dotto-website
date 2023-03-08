@@ -66,66 +66,70 @@ const fontsUrl =
         </RingText>
       </footer>
     </div>
+
     <script src="../scripts"></script>
-  </body><style is:global>
-    html,
-    body {
-      @apply m-0 overflow-hidden h-full;
-    }
-
-    html {
-      @apply text-base font-default font-300;
-      @apply bg-white-01 text-green-01 dark:bg-black dark:text-white-02;
-      @apply select-none;
-    }
-
-    body {
-      @apply py-4 lg:py-8 px-8 lg:px-16;
-    }
-
-    .layout-container {
-      @apply relative h-full grid grid-cols-1 overflow-hidden;
-      @apply gap-2 lg:gap-4;
-      grid-template-rows: auto 1fr auto;
-    }
-
-    .layout-container > .layout-header {
-      @apply text-green-02 flex items-center gap-4 border-b-2 border-b-green-01 sticky;
-      @apply pb-2 lg:pb-4;
-    }
-
-    .layout-header > h3 {
-      @apply text-green-01 dark:text-white-02 font-900;
-      @apply text-lg md:text-xl lg:text-2xl;
-    }
-
-    .layout-header > nav {
-      @apply flex items-center;
-      @apply gap-4 lg:gap-8;
-    }
-
-    .layout-container > .layout-content {
-      @apply flex flex-col overflow-y-auto scroll-smooth;
-      @apply gap-8 md:gap-14 lg:gap-16;
-    }
-
-    .layout-container > .layout-footer {
-      @apply border-t-2 border-t-green-01 flex;
-      @apply pt-2 lg:pt-4;
-    }
-
-    .layout-footer > div {
-      @apply flex flex-col justify-end gap-2 md:gap-4 lg:gap-6;
-      @apply basis-1/2 md:basis-3/4;
-    }
-
-    .layout-footer > div > h5 {
-      @apply font-600;
-      @apply text-base md:text-lg lg:text-xl;
-    }
-
-    .layout-footer > div > p {
-      @apply text-sm md:text-base lg:text-lg;
-    }
-  </style>
+    <script type="text/partytown" defer src="/_vercel/insights/script.js"></script>
+  </body>
 </html>
+
+<style is:global>
+  html,
+  body {
+    @apply m-0 overflow-hidden h-full;
+  }
+
+  html {
+    @apply text-base font-default font-300;
+    @apply bg-white-01 text-green-01 dark:bg-black dark:text-white-02;
+    @apply select-none;
+  }
+
+  body {
+    @apply py-4 lg:py-8 px-8 lg:px-16;
+  }
+
+  .layout-container {
+    @apply relative h-full grid grid-cols-1 overflow-hidden;
+    @apply gap-2 lg:gap-4;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .layout-container > .layout-header {
+    @apply text-green-02 flex items-center gap-4 border-b-2 border-b-green-01 sticky;
+    @apply pb-2 lg:pb-4;
+  }
+
+  .layout-header > h3 {
+    @apply text-green-01 dark:text-white-02 font-900;
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+
+  .layout-header > nav {
+    @apply flex items-center;
+    @apply gap-4 lg:gap-8;
+  }
+
+  .layout-container > .layout-content {
+    @apply flex flex-col overflow-y-auto scroll-smooth;
+    @apply gap-8 md:gap-14 lg:gap-16;
+  }
+
+  .layout-container > .layout-footer {
+    @apply border-t-2 border-t-green-01 flex;
+    @apply pt-2 lg:pt-4;
+  }
+
+  .layout-footer > div {
+    @apply flex flex-col justify-end gap-2 md:gap-4 lg:gap-6;
+    @apply basis-1/2 md:basis-3/4;
+  }
+
+  .layout-footer > div > h5 {
+    @apply font-600;
+    @apply text-base md:text-lg lg:text-xl;
+  }
+
+  .layout-footer > div > p {
+    @apply text-sm md:text-base lg:text-lg;
+  }
+</style>
